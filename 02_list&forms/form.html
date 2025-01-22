@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    
+
+    <form action="">
+
+
+        <label for="uname">Enter Name: </label>
+        <input type="text" name="uname" id="uname" size="50" maxlength="5" placeholder="Enter your name "  >
+        <br>
+
+        <label for="pass">ENter Password</label>
+        <input type="password" name="pass1" id="pass" placeholder="password should be of atleast 8 characters" >
+
+        <br>
+
+        <label for="email1">Enter EMail:</label>
+        <input type="email" name="email" id="email1">
+        <br>
+
+        <br>
+        <label for="review">Write a movie review:</label>
+        <br>
+        <textarea name="review" id="review" rows="9" cols="40">This is a good movie </textarea>
+
+        <br>
+
+        <label for="lang">Choose the language you know:</label>
+
+        <input type="checkbox" name="lang1" id="hindi" value="Hin">
+        <label for="Hind">Hindi</label>
+        <input type="checkbox" name="lang1" id="Jap" value="Jap">Japanese
+        <input type="checkbox" name="lang1" id="English" value="Eng">English
+        <input type="checkbox" name="lang1" id="Spanish" value="Spa">Spanish
+        <!-- if havent slected then in the url it will be "On" okay  -->
+<br>
+        <!-- <label for="gender">Select your Gender:
+        <input type="radio" name="male" id="male" value="Mal" >Male
+        <input type="radio" name="female" id="female" value="Fem" >Female
+        </label> -->
+
+
+
+
+        <label for="qual">Choose your highes Qualification:</label>
+
+        <input type="radio" name="qual1" id="btech" vlaue="btech">
+        <label for="btech">B.Tech</label>
+        <input type="radio" name="qual1" id="mtech" value="mtech">
+        <label for="mtech">Mtech</label>
+        <input type="radio" name="qual1" id="phd" value="phd" checked>
+        <input type="radio" name="qual1" id="post" value="post">
+        <label for="post">PostDoc</label>
+
+        <br>
+
+        <label for="statesel">Choose your state: </label>
+        <select name="statesel" id="statesel" size="1" >
+            <option value="choosest">Choose your state</option>
+
+            <option value="Punj">Punjab</option>
+            <option value="Jammu&Kashmir">Jammu&Kashmir</option>
+            <option value="Hp" selected>Hp</option>
+            <option value="tamil">Tamil</option>
+            <option value="Guj">Gujrat</option>
+        </select>
+
+        <!-- multiple iz also a tag to use here okie  -->
+
+<br>
+
+<label for="selfile">Choose file</label>
+<input type="file" name="selfie" id="selfie" accept="image/*">
+<!-- this is important only images will get selected here okie  -->
+
+
+
+
+
+
+
+        <br>
+        <input type="submit" name="submitform" id="submitform" value="submit it JI" required>
+        <input type="reset" name="resetform" id="resetform" value="Reset Form">
+            <input type="image" name="imgbtn" id="imgbtn" src="/01basics/submit-btn.png" width="100" height="100">
+
+    </form>
+</body>
+</html>
