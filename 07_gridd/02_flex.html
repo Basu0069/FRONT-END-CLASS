@@ -1,0 +1,71 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 30px;
+            background-color: burlywood;
+            border: 2px solid black;
+            display: flex;
+            gap: 10px;
+            /* justify-content: space-evenly; */
+            column-gap: 25px;
+              /* horizontal for justify and vertical for align items  */
+            align-items: flex-start;
+            /* height: 200px; */
+            flex-direction: row;
+              /* min height ajust the height itselft.. the container too  */
+            flex-wrap: wrap;
+            min-height: 500px;
+        }
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: coral;
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 10%;
+            color: aqua;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            padding: 60px;
+            flex-shrink:0 ;
+            /* flex-grow: 1; */
+
+        }
+
+        #i1{
+            /* flex-grow: 5; */
+            /* flex-shrink: 5;
+            align-self: flex-end; */
+            margin-right: auto;
+        }
+
+        @media(max-width:500px){
+            .container{
+                flex-wrap: wrap;
+                background-color: grey;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">Item 1</div>
+        <div class="item" id="i2">Item 2</div>
+        <div class="item" id="i3">Item 3</div>
+        <div class="item" id="i4">Item 4</div>
+        <div class="item" id="i5">Item 5</div>
+        <div class="item" id="i6">Item 6</div>
+    </div>
+</body>
+</html>
